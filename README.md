@@ -42,10 +42,10 @@ API Details:
 There are 2 API's created in the project.
 
 1.  
-Method Type : GET
-Request URL : /products/{id}
-Description: This API is used to retrieve product details based on the id.
-Response: 
+Method Type : GET    <br />
+Request URL : /products/{id}   <br />
+Description: This API is used to retrieve product details based on the id.  <br />
+Response: <br />
 {
     "id": 13860428,
     "name": "TestProductName",
@@ -55,11 +55,11 @@ Response:
     }
 }
 
-
-Example URL: 
+<br />
+Example URL:  <br />
 http://localhost:8080/products/13860428
-
-Example Response: 
+<br />
+Example Response: <br />
 {
     "id": 13860428,
     "name": "TestProductName",
@@ -69,12 +69,12 @@ Example Response:
     }
 }
 
-
+<br /><br /><br /><br />
 
 2.
-Method Type: PUT
-Request URL : /products/{id}
-Request Body : 
+Method Type: PUT  <br />
+Request URL : /products/{id}    <br />
+Request Body :  <br />
 {
     "id": 138604289,
     "name": "TestProductName",
@@ -82,11 +82,12 @@ Request Body :
         "value": 15.60,
         "currency_code": "EUR"
     }
-}
+}<br /><br />
 Description: This API is used to update product price based on ID. It is only used to update the existing Product ID. If the provided Product ID doesn't exist, then it returns appropriate error message.
 
-Example URL:  localhost:8080/products/13860428
-Example CURL request:
+Example URL: http://localhost:8080/products/13860428    <br />
+<br />
+Example CURL request: <br />
 curl --location --request PUT 'localhost:8080/products/13860428' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -97,9 +98,9 @@ curl --location --request PUT 'localhost:8080/products/13860428' \
         "currency_code": "USD"
     }
 }'
-
-Example Response: 
+<br /><br />
+Example Response: <br />
 Success
 
-
+<br />
 
